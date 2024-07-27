@@ -1,38 +1,199 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: myFont;
+  src: url(SamuraiBlast-YznGj.ttf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+h1{
+  font-family: myFont;
+}
+.Profile-page {
+  
+  display: grid;  
+  grid-template-columns: 1fr 1fr;  
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.profile-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  font-size: 3rem; 
+  color: #fff; 
+}
+
+.profile-description {
+  font-size: 1rem;
+  color: #ddd; 
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  max-width: 800px; 
+  margin-top: 20px;
+}
+
+.profile-image img {
+  width: 70%;
+  height: auto;
+  max-width: 1000px; 
+  border-radius: 8px; 
+}
+
+
+@media (min-width: 768px) {
+  .profile-page {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-content {
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  .profile-title {
+    font-size: 4rem; /* Adjust based on design */
+  }
+
+  .profile-description {
+    font-size: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .profile-description {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+}
+
+.particles {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.main-wrapper {
+  position: relative;
+}
+
+
+.custom-carousel-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.custom-carousel-img {
+  height: 400px; 
+  object-fit: cover; 
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color: white; 
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Responsiveness for tablets */
+@media (max-width: 768px) {
+  .glow-on-hover {
+      width: 180px;
+      height: 45px;
+  }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+  .glow-on-hover {
+      width: 150px;
+      height: 40px;
+      font-size: 14px; /* Adjust the font size if needed */
+  }
+}
+
