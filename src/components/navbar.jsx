@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import './Popup.css'
+import './Popup.css';
+import './Contact.css'
+import Contact from './Contact';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-
+  const toggleContact = () => {
+    setIsContactOpen(!isContactOpen);
+  };
 
   return (
     <nav className="navbar">
@@ -17,7 +22,7 @@ export const Navbar = () => {
         <img
           src="/icon/afz logo.png"
           alt="afz"
-          width='40px'
+          width="40px"
           style={{ borderRadius: '8px' }}
         />
       </div>
@@ -26,10 +31,13 @@ export const Navbar = () => {
         ☰
       </div>
       <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="">Home</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact" onClick={toggleContact}>Contact</a></li>
       </ul>
 
+      {isContactOpen && <Contact toggleContact={toggleContact} />}
     </nav>
   );
 };
+
+export default Navbar;

@@ -8,7 +8,7 @@ import ProfilePage from './components/ProfilePage'
 import { Education } from './components/Education';
 import {PreLoader} from './components/PreLoader';
 import { preLoaderAnim } from './animations';
-import {MyWork,BannerCards,Sertif} from './components/Card'
+import {MyWork,BannerCards} from './components/Card'
 import {BackToTop} from './components/BackToTop'
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
            <Education/>
            <BannerCards/>
             <MyWork/>
-              <Sertif/>
+            <BackToTop/>
       </div>
     </div>
     </>

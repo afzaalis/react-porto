@@ -24,7 +24,7 @@ export const Education = () => {
                         <img src="/img/smkn3.png" className="d-block w-100" alt="SMKN 3 Bandung" style={{ height: '400px', objectFit: 'cover' }} />
                         <div className="carousel-caption d-block">
                             <h5 style={{ color: 'white' }}>SMKN 3 Bandung</h5>
-                            <p>Multimedia 2019-2022</p>
+                            <p>Multimedia and Information Technology 2019-2022</p>
                         </div>
                     </div>
                 </div>

@@ -84,6 +84,29 @@ export const MyWork = () =>  {
           </MDBCard>
         </a>
       </MDBCol>
+      <MDBCol>
+        <a href="https://github.com/afzaalis/web-quiztzm" target="_blank" rel="noopener noreferrer">
+          <MDBCard className="h-100">
+            <MDBCardImage
+              className="hover-effect"
+              src="/icon/quiztzm.png"
+              alt='RPIC beta 1.0 project screenshot'
+              position='top'
+            />
+            <MDBCardBody>
+              <MDBCardTitle>
+                Quiztzm
+                <img src="/icon/quiztzmTools.png" alt="RPIC beta 1.0 Icon" style={{ width: '20%', marginLeft: '10px' }} />
+              </MDBCardTitle>
+              <MDBCardText>
+              This interactive web app is built with React to deliver a dynamic quiz experience. Whether you're testing your knowledge or just having fun,
+               our app is designed to keep you engaged with a countdown timer,
+               smooth navigation, and real-time score updates. And when you ace all the questions, enjoy a spectacular fireworks animation as a reward!
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        </a>
+      </MDBCol>
     </MDBRow>
     </section>
   );
@@ -191,72 +214,3 @@ export const BannerCards = () => {
     );
 }
 
-export const Sertif = () => {
-    return (
-      <section className="sertif">
-          <hr />
-            <h2 style={{fontFamily:'Poppins'}}>License & Certificate</h2>
-            <div class="ag-format-container">
-        <div class="ag-courses_box">
-          <div class="ag-courses_item">
-            <a href="#" class="ag-courses-item_link">
-              <div class="ag-courses-item_bg"></div>
-
-              <div class="ag-courses-item_title">
-                C++ Language
-                <img src="/sertif/cpp.png" alt=""  width='70%'/>
-              </div>
-
-              <div class="ag-courses-item_date-box">
-                Start:
-                <span class="ag-courses-item_date">
-                  04.11.2023
-                </span>
-              </div>
-            </a>
-          </div>
-
-          <div class="ag-courses_item">
-            <a href="#" class="ag-courses-item_link">
-              <div class="ag-courses-item_bg"></div>
-
-              <div class="ag-courses-item_title">
-              Javascript
-              <div className="imgSertif">
-              <img src="/sertif/js.png" alt=""  width='70%'/>
-              </div>
-              </div>
-
-              <div class="ag-courses-item_date-box">
-                Start:
-                <span class="ag-courses-item_date">
-                  04.3.2024
-                </span>
-              </div>
-            </a>
-          </div>
-
-          <div class="ag-courses_item">
-            <a href="#" class="ag-courses-item_link">
-              <div class="ag-courses-item_bg"></div>
-
-              <div class="ag-courses-item_title">
-                Web Development
-                <div className="imgSertif">
-              <img src="/sertif/kelascode.png" alt=""  width='70%'/>
-              </div>
-              </div>
-
-              <div class="ag-courses-item_date-box">
-                Start:
-                <span class="ag-courses-item_date">
-                  04.5.2024
-                </span>
-              </div>
-            </a>
-          </div>
-          </div>
-        </div>
-      </section>
-    )
-}
