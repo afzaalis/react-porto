@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-porto/static/css/main.f24ea2ac.css",
+    "main.js": "/react-porto/static/js/main.c589b870.js",
+    "static/js/453.08dea012.chunk.js": "/react-porto/static/js/453.08dea012.chunk.js",
+    "static/media/SamuraiBlast-YznGj.ttf": "/react-porto/static/media/SamuraiBlast-YznGj.c0172a4cbdca0632f829.ttf",
+    "index.html": "/react-porto/index.html",
+    "main.f24ea2ac.css.map": "/react-porto/static/css/main.f24ea2ac.css.map",
+    "main.c589b870.js.map": "/react-porto/static/js/main.c589b870.js.map",
+    "453.08dea012.chunk.js.map": "/react-porto/static/js/453.08dea012.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f24ea2ac.css",
+    "static/js/main.c589b870.js"
+  ]
+}
