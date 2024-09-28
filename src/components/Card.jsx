@@ -22,21 +22,22 @@ export const MyWork = () =>  {
         <h1 style={{fontFamily:'Poppins'}}>My Work</h1>
     <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
       <MDBCol>
-        <a href="https://cinema69.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/afzaalis/opportuneer-beta" target="_blank" rel="noopener noreferrer">
           <MDBCard className="h-100">
             <MDBCardImage
               className="hover-effect"
-              src="/icon/movieFinder.png"
+              src="/icon/opportuneer.png"
               alt='Cinema69 project screenshot'
               position='top'
             />
             <MDBCardBody >
               <MDBCardTitle>
-                Cinema69
+                Opportuneer
                 <img src="/icon/1-removebg-preview.png" alt="Cinema69 Icon" style={{ width: '90px', marginLeft: '10px' }} />
               </MDBCardTitle>
               <MDBCardText>
-                Building a movie finder website, API based on TMDB.
+              This application is an aggregator platform that provides interest test services, skill development, and job search pages.
+               This application makes it easy for users to know, develop, and find job vacancies that match their interests.
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
